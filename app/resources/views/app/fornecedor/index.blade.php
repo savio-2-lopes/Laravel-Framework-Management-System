@@ -1,23 +1,15 @@
 <h3>Fornecedor</h3>
 
-@php
-/**/
-@endphp
+@isset($fornecedores)
+    Fornecedor: {{ $fornecedores[0]['nome'] }}
 
-Fornecedor: {{ $fornecedores[0]['nome'] }}
+    <br>
 
-<br>
+    Status: {{ $fornecedores[0]['status'] }}
 
-Status: {{ $fornecedores[0]['status'] }}
+    <br>
 
-<br>
-
-@if (!($fornecedores[0]['status'] == 'S'))
-    Fornecedor Inativo
-@endif
-
-<br>
-
-@unless($fornecedores[0]['status'] == 'S')
-    Fornecedor Inativo
-@endunless
+    @isset($fornecedores[0]['cnpj'])
+        CNPJ: {{ $fornecedores[0]['cnpj'] }}
+    @endisset
+@endisset
