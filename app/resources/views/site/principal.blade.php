@@ -43,8 +43,9 @@
                     </div>
                 </div>
 
-                <iframe class="video" width="620" height="400"  src="https://www.youtube.com/embed/-45vbK7Qew8?autoplay=1&mute=1">
-                </iframe>
+                <div class="video">
+                    <img src="img/player_video.jpg">
+                </div>
             </div>
         </section>
 
