@@ -33,7 +33,7 @@
 
         <div class="page-info">
             <div class="contato-principal">
-                <form>
+                <form class="container">
                     <input type="text" placeholder="Nome" class="borda-preta">
                     <br>
                     <input type="text" placeholder="Telefone" class="borda-preta">
