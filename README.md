@@ -17,3 +17,6 @@ sudo chown -R lopes /home/lopes/www/php
 php artisan route:clear
 
 localhost:8000/clear-cache
+
+### Agradecimentos
+Projeto baseado no curso [Desenvolvimento Web Avançado 2022 com PHP, Laravel e Vue.JS](https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel), criado por [Jorge Sant Ana](https://www.udemy.com/user/jorgetadeusantanasilva/). Meus agradecimentos ao instrutor por este conteúdo sensacional.
