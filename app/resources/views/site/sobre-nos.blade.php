@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Gestão - Sobre Nós</title>
-    <link rel="stylesheet" href="/css/app.css">
-</head>
-
-<body>
-    <nav class="header">
-        <div class="logo">
-            <img src="{{ asset('img/logo.png') }}" alt="Logo">
-        </div>
-        <input type="checkbox" class="navbar-toggler" id="active">
-        <label for="active" class="menu-btn"><span></span></label>
-        <label for="active" class="close"></label>
-        <div class="menu">
-            <ul>
-                <li><a href="{{ route('site.index') }}">Principal</a></li>
-                <li><a href="{{ route('site.sobrenos') }}">Sobre Nós</a></li>
-                <li><a href="{{ route('site.contato') }}">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-
+@extends('site.layouts.base')
+@section('titulo', 'Sobre nós')
+@section('conteudo')
     <main class="page-content">
         <div class="page-title">
             <h1>Olá, eu sou o Super Gestão</h1>
@@ -58,6 +33,4 @@
             <img src="{{ asset('img/mapa.png') }}" alt="Map link">
         </div>
     </footer>
-</body>
-
-</html>
+@endsection

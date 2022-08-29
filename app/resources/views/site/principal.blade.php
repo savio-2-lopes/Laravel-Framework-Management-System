@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Gestão - Sobre Nós</title>
-    <link rel="stylesheet" href="/css/app.css">
-</head>
-
-<body>
-    <nav class="header">
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo">
-        </div>
-        <input type="checkbox" class="navbar-toggler" id="active">
-        <label for="active" class="menu-btn"><span></span></label>
-        <label for="active" class="close"></label>
-        <div class="menu">
-            <ul>
-                <li><a href="{{ route('site.index') }}">Principal</a></li>
-                <li><a href="{{ route('site.sobrenos') }}">Sobre Nós</a></li>
-                <li><a href="{{ route('site.contato') }}">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-
+@extends('site.layouts.base')
+@section('titulo', 'Página inicial')
+@section('conteudo')
     <main class="conteudo-destaque row">
         <section class="esquerda">
             <div class="container">
@@ -34,17 +9,17 @@
                     <p>Software para gestão empresarial ideal para sua empresa.
                     <p>
                     <div class="chamada">
-                        <img src="/img/check.png">
+                        <img src="{{ asset('img/check.png') }}">
                         <span class="texto-branco">Gestão completa e descomplicada</span>
                     </div>
                     <div class="chamada">
-                        <img src="img/check.png">
+                        <img src="{{ asset('img/check.png') }}">
                         <span class="texto-branco">Sua empresa na nuvem</span>
                     </div>
                 </div>
 
                 <div class="video">
-                    <img src="img/player_video.jpg">
+                    <img src="{{ asset('img/player_video.jpg') }}" alt="Video">
                 </div>
             </div>
         </section>
@@ -78,6 +53,4 @@
             </div>
         </section>
     </main>
-</body>
-
-</html>
+@endsection
