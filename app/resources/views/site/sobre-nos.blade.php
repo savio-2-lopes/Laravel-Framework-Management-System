@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Gestão - Sobre Nós</title>
     <link rel="stylesheet" href="/css/app.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
     <nav class="header">
         <div class="logo">
-            <img src="img/logo.png" alt="Logo">
+            <img src="{{ asset('img/logo.png') }}" alt="Logo">
         </div>
         <input type="checkbox" class="navbar-toggler" id="active">
         <label for="active" class="menu-btn"><span></span></label>
@@ -44,9 +43,9 @@
     <footer class="footer">
         <div class="social-media">
             <h2>Redes sociais</h2>
-            <img src="img/facebook.png" alt="Facebook link">
-            <img src="img/linkedin.png" alt="Linkedin link">
-            <img src="img/youtube.png" alt="Youtube link">
+            <img src="{{ asset('img/facebook.png') }}" alt="Facebook link">
+            <img src="{{ asset('img/linkedin.png') }}" alt="Linkedin link">
+            <img src="{{ asset('img/youtube.png') }}" alt="Youtube link">
         </div>
         <div class="contact-area">
             <h2>Contato</h2>
@@ -56,7 +55,7 @@
         </div>
         <div class="localization">
             <h2>Localização</h2>
-            <img src="img/mapa.png" alt="Map link">
+            <img src="{{ asset('img/mapa.png') }}" alt="Map link">
         </div>
     </footer>
 </body>
