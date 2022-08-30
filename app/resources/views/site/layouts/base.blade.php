@@ -13,6 +13,17 @@
 <body>
     @include('site.layouts._partials.nav')
     @yield('conteudo')
+    @include('site.layouts._partials.footer')
+
+    {{-- Script --}}
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script>
+        $(document).ready(function($) {
+            $('.phone').mask('(00) 0000-0000');
+        });
+    </script>
 </body>
 
 </html>

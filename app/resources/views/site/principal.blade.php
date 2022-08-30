@@ -1,7 +1,7 @@
 @extends('site.layouts.base')
 @section('titulo', 'Página inicial')
 @section('conteudo')
-    <main class="conteudo-destaque row">
+    <main class="row col-12">
         <section class="esquerda">
             <div class="container">
                 <div class="informacoes">
@@ -31,24 +31,8 @@
                     <p>
                         Caso tenha qualquer dúvida por favor entre em contato com nossa equipe pelo formulário abaixo.
                     <p>
-                    <form>
-                        <input type="text" placeholder="Nome" class="borda-branca">
-                        <br>
-                        <input type="text" placeholder="Telefone" class="borda-branca">
-                        <br>
-                        <input type="text" placeholder="E-mail" class="borda-branca">
-                        <br>
-                        <select class="borda-branca">
-                            <option value="">Qual o motivo do contato?</option>
-                            <option value="">Dúvida</option>
-                            <option value="">Elogio</option>
-                            <option value="">Reclamação</option>
-                        </select>
-                        <br>
-                        <textarea class="borda-branca">Preencha aqui a sua mensagem</textarea>
-                        <br>
-                        <button type="submit" class="borda-branca">ENVIAR</button>
-                    </form>
+                      @component('site.layouts._components.form')
+                      @endcomponent
                 </div>
             </div>
         </section>
